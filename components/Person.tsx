@@ -1,12 +1,14 @@
 
 type Props = {
     nome: string;
-    avatar: string;
+    avatar?: string;
     roles: string[];
     address?: string;
 }
 
-export const Person = ({ nome, avatar, roles }: Props) => {
+export const Person = ({ nome, 
+    avatar = 'https://static.vecteezy.com/ti/vetor-gratis/p1/9734564-default-avatar-profile-icon-of-social-media-user-vetor.jpg', 
+    roles }: Props) => {
 
     return (
         <div className="p-4">
